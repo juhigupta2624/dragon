@@ -1,0 +1,25 @@
+include<stdio.h>
+any number
+#include<stdlib.h>
+#include<time.h>
+int main(){
+  int target,guess,any=0;
+  srand(time(0));
+  target=rand()%100+1;
+  printf("I have selected a number between 1 and 100.
+try to guess it!\n);
+do{
+printf("enter your guess:");
+scanf("%d",& guess);
+any++;
+if(guess<target){
+print("Too low! try again\n");
+} else if(guess>target){
+print("Too high! try again\n");
+} else{
+printf("congratulations! you guessed the number in %d attempts.\n,any);
+  }
+}while(guess!=target);
+return 0;
+}
+  
